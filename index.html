@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+</head>
+<body>
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron text-center">
+                    <h1 class="display-4">Trivia Game</h1>
+                    <p class="lead">Instructions</p>
+                    <hr class="my-4">
+                    <p>This is a basic trivia game. Once you press the start button, a timer and a series of questions will pop up and begin counting down. You must answer as many questions as possible in that time. When you have answered all the questions you can continue by selecting complete. Otherwise, the page will move on automatically. Either way, it will tally your correct, incorrect, and unanswered answers.</p>
+                    </p>
+                  </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="start text-center">
+                <button type="button" class="btn-lg btn-primary startBtn">Start</button>
+                </div>
+                <div class="game">
+                <hr class="my-4">
+                <h3 class="text-center">Trivia Game!</h3>                
+                <div class="text-center timer">00:00</div>
+                <div class="questions text-center">
+
+                    <h4>1. How do crickets hear?</h4>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio1" id="q1o1">Through their wings
+                    </label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio1" id="q1o2">Through their belly</label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio1" id="q1o3">Through their knees</label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio1" id="q1o4">Through their tongue</label> 
+
+
+                    <h4>Which American city invented plastic vomit?</h4>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio2" id="q2o1">Chicago
+                    </label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio2" id="q2o2">Detroit</label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio2" id="q2o3">Columbus</label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio2" id="q2o4">Baltimore</label>
+
+
+                    <h4>3. In ‘Ben Hur’, which modern thing can be seen during the chariot scene?</h4>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio3" id="q3o1">A waitress
+                    </label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio3" id="q3o2">A car</label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio3" id="q3o3">A postbox</label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio3" id="q3o4">A street lamp</label>
+
+
+                    <h4>4. What was Karl Marx’s favorite color?</h4>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio4" id="q4o1">Brown
+                    </label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio4" id="q4o2">Blue</label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio4" id="q4o3">Red</label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio4" id="q4o4">Purple</label>
+
+
+                    <h4>5. What’s the best way to stop crying while peeling onions?</h4>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio5" id="q5o1">Lick almonds
+                    </label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio5" id="q5o2">Suck lemons</label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio5" id="q5o3">Eat cheese</label>
+                    <label class="radio-inline"><input type="radio" class="options" name="optradio5" id="q5o4">Chew gum</label>                
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="confirm text-center">
+                    <button type="button" class="btn-lg btn-danger confirmBtn">Confirm Answers!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class "endResults">
+                        <div class="card text-center">
+                                <div class="card-body">
+                                  <p>Right Answers: <span class="right"></span></p>
+                                  <p>Wrong Answers: <span class="wrong"></span></p>
+                                  <p>Unanswered: <span class="unanswered"></span></p>
+                                </div>
+                                <button type="button" class="btn-lg btn-primary restartBtn">Try again?</button>
+                              </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
